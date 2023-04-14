@@ -6,13 +6,13 @@ text-1: **Home**
 text-2: **About**
 text-3: **Resume**
 text-4: **Contact**
-linkedin: $assets.files.images.linkedin.png
-twit: $assets.files.images.twitter.png
-insta: $assets.files.images.insta.png
 
 -- lib.hero: **Govindaraman S**
 cta-text-1: ***Dreamer | Designer | Developer***
 pic: $assets.files.images.hero.jpg
+linkedin: $assets.files.images.linkedin.png
+twit: $assets.files.images.twitter.png
+insta: $assets.files.images.insta.png
 
 -- lib.about: **About Me**
 

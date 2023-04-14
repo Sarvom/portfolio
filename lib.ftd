@@ -6,9 +6,6 @@ string text-1:
 string text-2:
 string text-3:
 string text-4:
-ftd.image-src linkedin:
-ftd.image-src twit:
-ftd.image-src insta:
 
 -- ftd.column:
 width: fill-container
@@ -19,9 +16,6 @@ text-1: $navbar.text-1
 text-2: $navbar.text-2
 text-3: $navbar.text-3
 text-4: $navbar.text-4
-linkedin: $navbar.linkedin
-twit: $navbar.twit
-insta: $navbar.insta
 
 -- navbar-desktop:
 if: { ftd.device == "desktop" }
@@ -29,9 +23,6 @@ text-1: $navbar.text-1
 text-2: $navbar.text-2
 text-3: $navbar.text-3
 text-4: $navbar.text-4
-linkedin: $navbar.linkedin
-twit: $navbar.twit
-insta: $navbar.insta
 
 -- end: ftd.column
 
@@ -51,9 +42,6 @@ string text-1:
 string text-2:
 string text-3:
 string text-4:
-ftd.image-src linkedin:
-ftd.image-src twit:
-ftd.image-src insta:
 ftd.image-src menu: $assets.files.images.menu.png
 ftd.image-src close: $assets.files.images.close.png
 boolean $open: false
@@ -123,27 +111,6 @@ margin-bottom.px: 4
 white-space: nowrap
 link: index.html#contact
 
--- ftd.row:
-spacing.fixed.px: 30
-margin-bottom.px: 8
-
--- ftd.image:
-height.fixed.px: 32
-src: $navbar-mobile.linkedin
-link: https://www.linkedin.com/in/govindaraman-s/
-
--- ftd.image:
-height.fixed.px: 32
-src: $navbar-mobile.twit
-link: https://twitter.com/Govindaraman7
-
--- ftd.image:
-height.fixed.px: 32
-src: $navbar-mobile.insta
-link: https://www.instagram.com/s_govindaraman_/
-
--- end: ftd.row
-
 -- end: ftd.column
 
 -- end: ftd.column
@@ -164,9 +131,6 @@ string text-1:
 string text-2:
 string text-3:
 string text-4:
-ftd.image-src linkedin:
-ftd.image-src twit:
-ftd.image-src insta:
 
 -- ftd.row:
 align-content: center
@@ -214,27 +178,6 @@ link: index.html#contact
 
 -- end: ftd.row
 
--- ftd.row:
-align-self: end
-spacing.fixed.px: 30
-
--- ftd.image:
-height.fixed.px: 32
-src: $navbar-desktop.linkedin
-link: https://www.linkedin.com/in/govindaraman-s/
-
--- ftd.image:
-height.fixed.px: 32
-src: $navbar-desktop.twit
-link: https://twitter.com/Govindaraman7
-
--- ftd.image:
-height.fixed.px: 32
-src: $navbar-desktop.insta
-link: https://www.instagram.com/s_govindaraman_/
-
--- end: ftd.row
-
 -- end: ftd.row
 
 -- end: navbar-desktop
@@ -252,6 +195,9 @@ link: https://www.instagram.com/s_govindaraman_/
 ftd.image-src pic:
 caption title:
 string cta-text-1:
+ftd.image-src linkedin:
+ftd.image-src twit:
+ftd.image-src insta:
 
 -- ftd.column:
 width: fill-container
@@ -261,12 +207,18 @@ if: { ftd.device == "mobile" }
 pic: $hero.pic
 title: $hero.title
 cta-text-1: $hero.cta-text-1
+linkedin: $hero.linkedin
+twit: $hero.twit
+insta: $hero.insta
 
 -- hero-desktop:
 if: { ftd.device == "desktop" }
 pic: $hero.pic
 title: $hero.title
 cta-text-1: $hero.cta-text-1
+linkedin: $hero.linkedin
+twit: $hero.twit
+insta: $hero.insta
 
 -- end: ftd.column
 
@@ -285,6 +237,9 @@ cta-text-1: $hero.cta-text-1
 ftd.image-src pic:
 caption title:
 string cta-text-1:
+ftd.image-src linkedin:
+ftd.image-src twit:
+ftd.image-src insta:
 
 -- ftd.column:
 width: fill-container
@@ -302,6 +257,27 @@ height: fill-container
 color: #303030
 role: $inherited.types.heading-small 
 padding-vertical.px: 12
+
+-- ftd.row:
+spacing.fixed.px: 30
+margin-bottom.px: 8
+
+-- ftd.image:
+height.fixed.px: 32
+src: $hero-mobile.linkedin
+link: https://www.linkedin.com/in/govindaraman-s/
+
+-- ftd.image:
+height.fixed.px: 32
+src: $hero-mobile.twit
+link: https://twitter.com/Govindaraman7
+
+-- ftd.image:
+height.fixed.px: 32
+src: $hero-mobile.insta
+link: https://www.instagram.com/s_govindaraman_/
+
+-- end: ftd.row
 
 -- ftd.image: 
 align-self: center
@@ -324,6 +300,9 @@ src: $hero-mobile.pic
 ftd.image-src pic:
 caption title:
 string cta-text-1:
+ftd.image-src linkedin:
+ftd.image-src twit:
+ftd.image-src insta:
 
 -- ftd.column:
 width: fill-container
@@ -352,6 +331,27 @@ height: fill-container
 color: #303030
 role: $inherited.types.heading-small 
 padding-vertical.px: 12
+
+-- ftd.row:
+align-self: center
+spacing.fixed.px: 30
+
+-- ftd.image:
+height.fixed.px: 32
+src: $hero-desktop.linkedin
+link: https://www.linkedin.com/in/govindaraman-s/
+
+-- ftd.image:
+height.fixed.px: 32
+src: $hero-desktop.twit
+link: https://twitter.com/Govindaraman7
+
+-- ftd.image:
+height.fixed.px: 32
+src: $hero-desktop.insta
+link: https://www.instagram.com/s_govindaraman_/
+
+-- end: ftd.row
 
 -- end: ftd.column
 
