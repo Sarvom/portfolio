@@ -1,5 +1,4 @@
 -- import: sarvom.github.io/portfolio/assets
-;; import: fifthtry.github.io/raleway-typography
 
 -- component navbar:
 string text-1:
@@ -415,7 +414,6 @@ color: #cf0000
 -- component about:
 caption title:
 body body:
-ftd.type-data types: $raleway-typography.types
 
 -- ftd.column:
 width: fill-container
