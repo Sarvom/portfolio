@@ -1,5 +1,5 @@
--- import: sarvom.github.io/govindaraman/assets
--- import: sarvom.github.io/govindaraman/lib
+-- import: sarvom.github.io/portfolio/assets
+-- import: sarvom.github.io/portfolio/lib
 
 -- lib.navbar:
 text-1: **Home**
@@ -8,7 +8,8 @@ text-3: **Resume**
 text-4: **Contact**
 
 -- lib.hero: **Govindaraman S**
-cta-text-1: ***Dreamer | Designer | Developer***
+cta-text-1: ***Reframe the future***
+cta-text-2: **Dreamer | Designer | Developer**
 pic: $assets.files.images.hero.jpg
 linkedin: $assets.files.images.linkedin.png
 twit: $assets.files.images.twitter.png

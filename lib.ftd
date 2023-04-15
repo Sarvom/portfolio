@@ -1,4 +1,4 @@
--- import: sarvom.github.io/govindaraman/assets
+-- import: sarvom.github.io/portfolio/assets
 ;; import: fifthtry.github.io/raleway-typography
 
 -- component navbar:
@@ -53,10 +53,8 @@ height: hug-content
 background.solid: #ffffffff
 
 -- ftd.row:
-spacing.fixed.px: 80
-
--- ftd.row:
-margin-left.px: 100
+width: fill-container
+align-content: right
 
 -- ftd.image:
 if: { !navbar-mobile.open }
@@ -72,40 +70,38 @@ $on-click$: $ftd.set-bool($a = $navbar-mobile.open, v = false)
 
 -- end: ftd.row
 
--- end: ftd.row
-
 -- ftd.column:
 if: { navbar-mobile.open}
 width: fill-container
 margin-bottom.px: 4
 
 -- ftd.text: $navbar-mobile.text-1
-color: #4e46e5
-role: $inherited.types.label-small
+color: #004196
+role: $inherited.types.label-large
 text-align: center
 margin-bottom.px: 4
 white-space: nowrap
-link: /trizwit/
+link: /govindaraman/
 
 -- ftd.text: $navbar-mobile.text-2
-color: #4e46e5
-role: $inherited.types.label-small
+color: #004196
+role: $inherited.types.label-large
 text-align: center
 margin-bottom.px: 4
 white-space: nowrap
 link: index.html#services
 
 -- ftd.text: $navbar-mobile.text-3
-color: #4e46e5
-role: $inherited.types.label-small
+color: #004196
+role: $inherited.types.label-large
 text-align: center
 margin-bottom.px: 4
 white-space: nowrap
 link: about/
 
 -- ftd.text: $navbar-mobile.text-4
-color: #4e46e5
-role: $inherited.types.label-small
+color: #004196
+role: $inherited.types.label-large
 text-align: center
 margin-bottom.px: 4
 white-space: nowrap
@@ -153,7 +149,7 @@ color: #000000
 role: $inherited.types.label-large
 text-align: center
 white-space: nowrap
-link: /trizwit/
+link: /govindaraman/
 
 -- ftd.text: $navbar-desktop.text-2
 color: #000000
@@ -195,6 +191,7 @@ link: index.html#contact
 ftd.image-src pic:
 caption title:
 string cta-text-1:
+string cta-text-2:
 ftd.image-src linkedin:
 ftd.image-src twit:
 ftd.image-src insta:
@@ -207,6 +204,7 @@ if: { ftd.device == "mobile" }
 pic: $hero.pic
 title: $hero.title
 cta-text-1: $hero.cta-text-1
+cta-text-2: $hero.cta-text-2
 linkedin: $hero.linkedin
 twit: $hero.twit
 insta: $hero.insta
@@ -216,6 +214,7 @@ if: { ftd.device == "desktop" }
 pic: $hero.pic
 title: $hero.title
 cta-text-1: $hero.cta-text-1
+cta-text-2: $hero.cta-text-2
 linkedin: $hero.linkedin
 twit: $hero.twit
 insta: $hero.insta
@@ -237,6 +236,7 @@ insta: $hero.insta
 ftd.image-src pic:
 caption title:
 string cta-text-1:
+string cta-text-2:
 ftd.image-src linkedin:
 ftd.image-src twit:
 ftd.image-src insta:
@@ -246,15 +246,21 @@ width: fill-container
 padding-vertical.px: 32
 padding-horizontal.px: 16
 align-self: center
+align-content: center
 
 -- ftd.text: $hero-mobile.title
-color: #fe46e5
+color: #004196
 role: $inherited.types.heading-hero
 padding-vertical.px: 12
 height: fill-container
 
 -- ftd.text: $hero-mobile.cta-text-1
-color: #303030
+color: #419600
+role: $inherited.types.heading-small 
+padding-vertical.px: 12
+
+-- ftd.text: $hero-mobile.cta-text-2
+color: #419600
 role: $inherited.types.heading-small 
 padding-vertical.px: 12
 
@@ -282,6 +288,9 @@ link: https://www.instagram.com/s_govindaraman_/
 -- ftd.image: 
 align-self: center
 src: $hero-mobile.pic
+border-radius.px: 50
+border-width.px: 15
+color: #004196
 
 -- end: ftd.column
 
@@ -300,6 +309,7 @@ src: $hero-mobile.pic
 ftd.image-src pic:
 caption title:
 string cta-text-1:
+string cta-text-2:
 ftd.image-src linkedin:
 ftd.image-src twit:
 ftd.image-src insta:
@@ -328,12 +338,18 @@ padding-vertical.px: 12
 height: fill-container
 
 -- ftd.text: $hero-desktop.cta-text-1
-color: #303030
+color: #964100
+role: $inherited.types.heading-small 
+padding-vertical.px: 12
+
+-- ftd.text: $hero-desktop.cta-text-2
+color: #419600
 role: $inherited.types.heading-small 
 padding-vertical.px: 12
 
 -- ftd.row:
 align-self: center
+align-content: center
 spacing.fixed.px: 30
 
 -- ftd.image:
@@ -356,12 +372,13 @@ link: https://www.instagram.com/s_govindaraman_/
 -- end: ftd.column
 
 -- ftd.column:
-border-radius.px: 50
-background.solid: #ff11ff
 
 -- ftd.image: 
 align-self: center
 src: $hero-desktop.pic
+border-radius.px: 50
+border-width.px: 15
+color: #004196
 
 -- end: ftd.column
 
