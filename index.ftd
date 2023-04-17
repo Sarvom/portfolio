@@ -23,22 +23,26 @@ Technology. I am a Designer who want to build cool things that are useful for
 society. I also want to support my peers to become the best version of 
 themselves**
 
+-- lib.page: **Experience**
+
 -- lib.resume-card: **Front-End Developer**
 icon: $assets.files.images.trizwit.jpeg
 organization: **Trizwit Labs**
 duration: *Feb 2023 - Present*
 
--- lib.resume-card: **Front-End Developer**
+-- lib.resume-card: **Freelance Graphic Designer**
 icon: $assets.files.images.org.png
-organization: **Trizwit Labs**
-duration: *Feb 2023 - Present*
+organization: **Fiver**
+duration: *Sep 2022 - Present*
 
--- lib.resume-card: **Front-End Developer**
+-- lib.resume-card: **Chairman**
 icon: $assets.files.images.org.png
-organization: **Trizwit Labs**
-duration: *Feb 2023 - Present*
+organization: **IEEE MACE SB**
+duration: *Jan 2021 - Dec 2021*
 
--- lib.resume-card: **Front-End Developer**
+-- lib.page: **Education**
+
+-- lib.resume-card: **B.Tech Electrcial & Electronics Engineering**
 icon: $assets.files.images.org.png
-organization: **Trizwit Labs**
-duration: *Feb 2023 - Present*
+organization: **Mar Athanasius College of Engineering, Kothamanagalam**
+duration: *Aug 2018 - July 2022*

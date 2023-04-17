@@ -502,7 +502,7 @@ padding-left.px: 24
 
 -- ftd.text: $resume-card.title
 role: $inherited.types.heading-small 
-padding-vertical.px: 12
+padding-vertical.px: 10
 
 -- ftd.text: $resume-card.organization
 role: $inherited.types.heading-tiny
@@ -520,3 +520,52 @@ padding-vertical.px: 8
 
 -- end: resume-card 
 
+
+
+
+
+
+
+
+
+
+-- component page:
+optional caption title:
+optional body body:
+
+-- ftd.column:
+width: fill-container
+background.solid: #eeeeee
+align-self: center
+align-content: center
+padding-horizontal.px: 20
+padding-top.px: 96
+margin-horizontal.px if { ftd.device == "desktop" }: 160
+
+-- ftd.column:
+align-self: center
+align-content: center
+margin-bottom.px: 80
+
+-- ftd.text: $page.title
+if: { $page.title != NULL }
+text-align: center
+color: #111827
+role: $inherited.types.heading-large
+margin-bottom.px: 8
+
+-- ftd.text: 
+if: { $page.body != NULL }
+role: $inherited.types.heading-small
+padding-top.px: 10
+padding-horizontal.px if { ftd.device == "desktop" }: 200
+text-align: center
+color: #666888
+
+$page.body
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: page
