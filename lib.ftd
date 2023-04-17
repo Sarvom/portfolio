@@ -80,7 +80,7 @@ role: $inherited.types.label-large
 text-align: center
 margin-bottom.px: 4
 white-space: nowrap
-link: /govindaraman/
+link: /portfolio/
 
 -- ftd.text: $navbar-mobile.text-2
 color: #004196
@@ -96,7 +96,7 @@ role: $inherited.types.label-large
 text-align: center
 margin-bottom.px: 4
 white-space: nowrap
-link: http://bit.ly/govindaraman-resume
+link: https://bit.ly/govindaraman-resume
 
 -- ftd.text: $navbar-mobile.text-4
 color: #004196
@@ -104,7 +104,7 @@ role: $inherited.types.label-large
 text-align: center
 margin-bottom.px: 4
 white-space: nowrap
-link: index.html#contact
+link: link: https://wa.me/917025115274
 
 -- end: ftd.column
 
@@ -147,7 +147,7 @@ color: #004196
 role: $inherited.types.copy-regular
 text-align: center
 white-space: nowrap
-link: /govindaraman/
+link: /portfolio/
 
 -- ftd.text: $navbar-desktop.text-2
 color: #004196
