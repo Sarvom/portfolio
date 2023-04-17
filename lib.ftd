@@ -1,4 +1,5 @@
 -- import: sarvom.github.io/portfolio/assets
+-- import: sarvom.github.io/portfolio/common
 
 -- component navbar:
 string text-1:
