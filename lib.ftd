@@ -292,12 +292,16 @@ link: https://github.com/Sarvom
 
 -- end: ftd.row
 
+-- ftd.column:
+
 -- ftd.image: 
 align-self: center
 src: $hero-mobile.pic
 border-radius.px: 50
 border-width.px: 5
 color: #cf0000
+
+-- end: ftd.column
 
 -- end: ftd.column
 
