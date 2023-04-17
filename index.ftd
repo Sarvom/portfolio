@@ -27,3 +27,18 @@ themselves**
 icon: $assets.files.images.trizwit.jpeg
 organization: **Trizwit Labs**
 duration: *Feb 2023 - Present*
+
+-- lib.resume-card: **Front-End Developer**
+icon: $assets.files.images.org.png
+organization: **Trizwit Labs**
+duration: *Feb 2023 - Present*
+
+-- lib.resume-card: **Front-End Developer**
+icon: $assets.files.images.org.png
+organization: **Trizwit Labs**
+duration: *Feb 2023 - Present*
+
+-- lib.resume-card: **Front-End Developer**
+icon: $assets.files.images.org.png
+organization: **Trizwit Labs**
+duration: *Feb 2023 - Present*
