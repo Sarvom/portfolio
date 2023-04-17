@@ -96,7 +96,7 @@ role: $inherited.types.label-large
 text-align: center
 margin-bottom.px: 4
 white-space: nowrap
-link: about/
+link: http://bit.ly/govindaraman-resume
 
 -- ftd.text: $navbar-mobile.text-4
 color: #004196
@@ -143,29 +143,29 @@ spacing.fixed.px: 30
 width: fill-container
 
 -- ftd.text: $navbar-desktop.text-1
-color: #000000
-role: $inherited.types.label-large
+color: #004196
+role: $inherited.types.copy-regular
 text-align: center
 white-space: nowrap
 link: /govindaraman/
 
 -- ftd.text: $navbar-desktop.text-2
-color: #000000
-role: $inherited.types.label-large
+color: #004196
+role: $inherited.types.copy-regular
 text-align: center
 white-space: nowrap
 link: index.html#about
 
 -- ftd.text: $navbar-desktop.text-3
-color: #000000
-role: $inherited.types.label-large
+color: #004196
+role: $inherited.types.copy-regular
 text-align: center
 white-space: nowrap
-link: /
+link: bit.ly/govindaraman-resume
 
 -- ftd.text: $navbar-desktop.text-4
-color: #000000
-role: $inherited.types.label-large
+color: #004196
+role: $inherited.types.copy-regular
 text-align: center
 white-space: nowrap
 link: index.html#contact
@@ -197,6 +197,7 @@ ftd.image-src github:
 
 -- ftd.column:
 width: fill-container
+background.solid: #eeeeee
 
 -- hero-mobile:
 if: { ftd.device == "mobile" }
@@ -257,12 +258,12 @@ padding-vertical.px: 12
 height: fill-container
 
 -- ftd.text: $hero-mobile.cta-text-1
-color: #cf0000
-role: $inherited.types.heading-small 
+color: #666aaa
+role: $inherited.types.heading-medium
 padding-vertical.px: 12
 
 -- ftd.text: $hero-mobile.cta-text-2
-color: #cf0000
+color: #666aaa
 role: $inherited.types.heading-small 
 padding-vertical.px: 12
 
@@ -299,7 +300,7 @@ align-self: center
 src: $hero-mobile.pic
 border-radius.px: 50
 border-width.px: 5
-color: #cf0000
+color: #aaa666
 
 -- end: ftd.column
 
@@ -351,12 +352,12 @@ padding-vertical.px: 12
 height: fill-container
 
 -- ftd.text: $hero-desktop.cta-text-1
-color: #cf0000
-role: $inherited.types.heading-small 
+color: #666aaa
+role: $inherited.types.heading-medium
 padding-vertical.px: 12
 
 -- ftd.text: $hero-desktop.cta-text-2
-color: #cf0000
+color: #666aaa
 role: $inherited.types.heading-small 
 padding-vertical.px: 12
 
@@ -396,7 +397,7 @@ align-self: center
 src: $hero-desktop.pic
 border-radius.px: 50
 border-width.px: 5
-color: #cf0000
+color: #aaa666
 
 -- end: ftd.column
 
@@ -421,7 +422,7 @@ body body:
 
 -- ftd.column:
 width: fill-container
-background.solid: #f0f0f0
+background.solid: #dddddd
 align-self: center
 align-content: center
 padding-horizontal.px: 20
@@ -435,17 +436,19 @@ align-content: center
 margin-bottom.px: 80
 
 -- ftd.text: $about.title
+if: { $about.title != NULL }
 text-align: center
 color: #111827
 role: $inherited.types.heading-large
 margin-bottom.px: 8
 
 -- ftd.text: 
+if: { $about.body != NULL }
 role: $inherited.types.heading-small
 padding-top.px: 10
 padding-horizontal.px if { ftd.device == "desktop" }: 200
 text-align: center
-color: #6b7280
+color: #666888
 
 $about.body
 
@@ -454,3 +457,64 @@ $about.body
 -- end: ftd.column
 
 -- end: about
+
+
+
+
+
+
+
+
+
+
+-- component resume-card:
+caption title:
+ftd.image-src icon:
+string organization:
+string duration:
+
+-- ftd.column:
+width: fill-container
+background.solid: #eeeeee
+
+-- ftd.row:
+width.fixed.percent: 60
+height.fixed.percent: 70
+align-self: center
+margin-vertical.px: 100
+margin-horizontal.px: 100
+padding-vertical.px: 32
+padding-horizontal.px: 32
+border-radius.px: 15
+background.solid: #ffffff
+
+-- ftd.image:
+src: $resume-card.icon
+height.fixed.px: 50
+width.fixed.px: 50
+margin-vertical.px: 12
+border-radius.px: 5
+
+-- ftd.column:
+padding-left.px: 24
+
+-- ftd.text: $resume-card.title
+role: $inherited.types.heading-small 
+padding-vertical.px: 12
+
+-- ftd.text: $resume-card.organization
+role: $inherited.types.heading-tiny
+padding-vertical.px: 8
+
+-- ftd.text: $resume-card.duration
+role: $inherited.types.label-large
+padding-vertical.px: 8
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: resume-card 
+
