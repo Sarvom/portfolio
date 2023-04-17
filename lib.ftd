@@ -481,12 +481,13 @@ background.solid: #eeeeee
 width.fixed.percent: 60
 height.fixed.percent: 70
 align-self: center
-margin-vertical.px: 100
+margin-vertical.px if { ftd.device == "desktop" }: 64
 margin-horizontal.px if { ftd.device == "desktop" }: 100
 padding-vertical.px: 32
 padding-horizontal.px: 32
 border-radius.px: 15
 background.solid: #ffffff
+shadow: $common.box
 
 -- ftd.image:
 src: $resume-card.icon
